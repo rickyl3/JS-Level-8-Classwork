@@ -1,0 +1,149 @@
+<!-- 
+    Ricky Leung
+    Period 7/8 Odd
+    Level 8 JS Classwork
+    For subchapter level 4
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky L. - Intro Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(205, 230, 254);
+        }
+
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border-radius: 15px;
+            background-color: red;
+            background-image: url("Images/Navigation.jpg");
+            overflow: auto;
+        }
+        .navigation li {
+            height: 5%;
+            font-size: 1.5vw;
+            font-family: "Montserrat", serif;
+            color: black;
+            font-weight: bold;
+            float: left;
+            margin: 10px 9.5%;
+        }
+        .navigation li a {
+            text-decoration: none;
+        }
+        .navigation li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+        }
+
+        h1, .author {
+            font-family: "Montserrat", serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        video {
+            width: 40vw;
+        }
+        img {
+            width: 20%;
+        }
+        .about {
+            font-family: "Montserrat", serif;
+            display: flex;
+            flex-direction: row;
+        }
+        .aboutInfo h2, .aboutInfo p {
+            text-align: center;
+        }
+        .aboutInfo h2 {
+            font-size: 3vw;
+        }
+        .aboutInfo p {
+            font-size: 1.5vw;
+            padding: 2vw;
+        }
+
+        footer {
+            padding-top: 28px;
+            text-align: center;
+        }
+        .validation {
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="spots.html">Spots</a></li>
+            </ul>
+        </nav>
+        <h1>Intro Website</h1>
+        <p class="author">Ricky L.</p>
+    </header>
+
+    <main>
+        <div class="about">
+            <video controls src="Video/Sunset.mp4"></video>
+            <div class="aboutInfo">
+                <h2>About Me</h2>
+                <p>My name is Ricky Leung and I am currently a software major at 
+                    <a href="https://www.bths.edu/" target="_blank">Brooklyn Technical High School</a>. I am making this website for an assignment
+                    in Irimina's Web Development class (Period 7/8). The rest of this website won't be styled that much 
+                    because I'm too lazy.
+                </p>
+                <img src="Images/btech.jfif" alt="Brooklyn Tech">
+                <img src="Images/ocean.jpg" alt="Ocean">
+                <audio controls src="Audio/crickets_insects.wav"></audio>
+            </div>
+        </div>
+
+        <div class="requirements">
+            <p>
+                Here is the list of requirements for each page of the website(unless specified) 
+                because I don't feel like constantly going back to the google docs:
+            </p>
+            <ul>
+                <li>One HTML comment</li>
+                <li>At least two headings (h1, h2)</li>
+                <li>At least two images(you do not need to be in the image)</li>
+                <li>At least two paragraphs</li>
+                <li>At least one relative and one absolute link</li>
+                <li>Copyright symbol</li>
+                <li>At least one list</li>
+                <li>At least one table(on one page is enough)</li>
+                <li>At least one audio file(on one page is enough) with controls for the viewer</li>
+                <li>At least one video file(on one page is enough) with controls for the viewer</li>
+                <li>At least one form(on one page is enough)</li>
+                <li>At least one generic container element(div or span) and one semantic container element</li>
+            </ul>
+        </div>
+        <form action="index.html">
+            <label for="name">First name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="osis">Last name:</label>
+            <input type="text" id="osis" name="osis"><br><br>
+            <input type="submit" value="Submit">
+            <label>This form doesn't do anything</label>
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; Ricky L</p>
+        <img src="Validations/indexValidation.PNG" alt="Markup validation" class="validation">
+    </footer>
+</body>
+</html>
